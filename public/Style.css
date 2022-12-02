@@ -1,9 +1,37 @@
-.heading
+*{
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.card
 {
 
-    background-color: red;
-    
-    text-align: center;
+    background-color: #ffda77;
+    box-shadow: 2px 4px 4px gray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width:390px;
+    display: inline-block;
+
+}
+
+.cardTitle
+{
+
+    text-align: justify;
+    margin-bottom: 5px;
+
+}
+
+.cardBody
+{
+
+    text-align: justify;
+    margin-bottom: 5px;
 
 
 }
