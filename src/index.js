@@ -5,10 +5,30 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const todoTitle="JSX --> javascript code in html";
+const date=new Date();
+
+const year=date.getFullYear();
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+
+  // many html tag use in here by using div
+  // javascript use in html by "{}"
+
+
+  <div>
+
+    <h1>Hello</h1>
+
+    <h3>{ todoTitle }</h3>
+
+    <p>{ year }</p>
+    
+    <p>{ "date = " + date + "year = " + year }</p>
+
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
