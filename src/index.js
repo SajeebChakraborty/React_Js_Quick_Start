@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+//import manual css in src directory
+import './style.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -40,6 +44,8 @@ root.render(
     <p style={addStyle}>{ year }</p>
 
     <p className='heading'>{ "date = " + date + "year = " + year }</p>
+
+    <p className='footer'>footer</p>
 
   </div>
 );
