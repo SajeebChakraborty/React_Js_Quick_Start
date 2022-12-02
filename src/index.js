@@ -39,7 +39,7 @@ root.render(
 
     <p style={addStyle}>{ year }</p>
 
-    <p>{ "date = " + date + "year = " + year }</p>
+    <p className='heading'>{ "date = " + date + "year = " + year }</p>
 
   </div>
 );
