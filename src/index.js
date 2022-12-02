@@ -11,6 +11,19 @@ const date=new Date();
 
 const year=date.getFullYear();
 
+const addStyle={
+
+  backgroundColor: "purple",
+
+  fontSize: "3 rem",
+
+  textAlign: "center",
+
+  padding: "15px",
+
+}
+
+
 root.render(
 
 
@@ -22,10 +35,10 @@ root.render(
 
     <h1>Hello</h1>
 
-    <h3>{ todoTitle }</h3>
+    <h3 style={{ backgroundColor: "purple", fontSize:"3rem" }}>{ todoTitle }</h3>
 
-    <p>{ year }</p>
-    
+    <p style={addStyle}>{ year }</p>
+
     <p>{ "date = " + date + "year = " + year }</p>
 
   </div>
