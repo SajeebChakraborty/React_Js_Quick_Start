@@ -5,15 +5,15 @@ import './index.css';
 //import manual css in src directory
 import './style.css';
 
+//import component
+import Card from './components/Card'
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const todoTitle="JSX --> javascript code in html";
-const date=new Date();
 
-const year=date.getFullYear();
 
 const addStyle={
 
@@ -39,26 +39,13 @@ root.render(
 
     <h1>Hello</h1>
 
-    <h3 style={{ backgroundColor: "purple", fontSize:"3rem" }}>{ todoTitle }</h3>
 
-    <div className='card'>
+    <Card />
 
-        <h1 className='cardTitle'>
-
-          Ticket
-
-        </h1>
-
-        <p className='cardBody'>
-
-          In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
-
-        </p>
+    <Card />
 
 
-
-    </div>
-
+   
   </div>
 );
 
