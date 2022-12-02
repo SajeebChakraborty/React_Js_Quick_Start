@@ -6,18 +6,22 @@ const year=date.getFullYear();
 function Card(props)
 {
 
+    //destructuring
+
+    const {titleText,descText}=props;
+
     return  <div className='card'>
 
         <h1 className='cardTitle'>
 
-            { props.titleText }
+            { titleText }
 
         </h1>
 
         <p className='cardBody'>
 
 
-            { props.descText }
+            { descText }
 
         </p>
 
