@@ -6,6 +6,8 @@ import Card from './components/Card';
 //import data.json file
 import Data from './Data.json';
 
+import { v4 as uuidv4 } from 'uuid';
+
 
 function App() {
 
@@ -17,7 +19,7 @@ function App() {
    <div>
 
       
-      {  Data.map((item,index)=> <Card key={index} titleText={item.titleText} descText={item.descText}/>) }
+      {  Data.map((item,index)=> <Card key={uuidv4()} titleText={item.titleText} descText={item.descText}/>) }
     
 
    </div>
