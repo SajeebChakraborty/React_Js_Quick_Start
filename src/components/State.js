@@ -15,6 +15,8 @@ export class State extends Component {
 
       }
     }
+
+  /*
     
   IncrementCount=()=>{
 
@@ -26,6 +28,22 @@ export class State extends Component {
     })
 
   }
+
+  */
+
+  //when we use normal function in here instead of array function,must needed to bind this.
+
+  IncrementCount(){
+
+    this.setState({
+
+        count:this.state.count+1
+
+
+    })
+
+  }
+
 
   DecrementCount=()=>{
 
@@ -53,7 +71,7 @@ export class State extends Component {
 
         <p>Count : {count}</p>
 
-        <Button variant='success' onClick={this.IncrementCount}>+</Button>
+        <Button variant='success' onClick={this.IncrementCount.bind(this)}>+</Button>
         <Button variant='danger' style={{ paddingLeft: "50 px", }} onClick={this.DecrementCount} disabled={count<=0 ? true:false}>-</Button>
 
 
