@@ -6,6 +6,7 @@ import Card from './components/Card';
 import Data from './Data.json';
 
 import { v4 as uuidv4 } from 'uuid';
+import Card2 from './components/Card2';
 
 // nested mapping
 
@@ -82,6 +83,9 @@ function App() {
           )}
 
       </div>)}
+
+
+      <Card2 title="card-name"/>
 
    </div>
 
