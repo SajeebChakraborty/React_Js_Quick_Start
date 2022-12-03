@@ -14,6 +14,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import State from './components/State';
+import FirstPage from './conditonalRendering/FirstPage';
 
 // nested mapping
 
@@ -68,6 +69,8 @@ function App() {
    <div>
 
       <State/>
+
+      <FirstPage/>
 
       
       {  Data.map((item,index)=> <Card key={uuidv4()} titleText={item.titleText} descText={item.descText}/>) }
