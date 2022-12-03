@@ -9,24 +9,15 @@ import Data from './Data.json';
 
 function App() {
 
-  let item=[];
 
-  for(let i=0;i<Data.length;i++)
-  {
-
-    item.push(<Card titleText={Data[i].titleText} descText={Data[i].descText}/>)
-
-  }
-
-
-
+   //mapping data to component
 
   return (
     
    <div>
 
       
-      { item }
+      {  Data.map((item)=> <Card titleText={item.titleText} descText={item.descText}/>) }
     
 
    </div>
