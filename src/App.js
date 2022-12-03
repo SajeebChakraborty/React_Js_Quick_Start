@@ -17,7 +17,7 @@ function App() {
    <div>
 
       
-      {  Data.map((item)=> <Card titleText={item.titleText} descText={item.descText}/>) }
+      {  Data.map((item,index)=> <Card key={index} titleText={item.titleText} descText={item.descText}/>) }
     
 
    </div>
