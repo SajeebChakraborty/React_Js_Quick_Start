@@ -9,6 +9,10 @@ import Data from './Data.json';
 import { v4 as uuidv4 } from 'uuid';
 import Card2 from './components/Card2';
 
+//import react bootsrap component
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // nested mapping
 
 const users=[
@@ -90,6 +94,8 @@ function App() {
 
       < FaFacebookF />
       < FaYoutube />
+
+      <Button variant='danger'>Learn more </Button>
 
    </div>
 
