@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import State from './components/State';
 import FirstPage from './conditonalRendering/FirstPage';
+import Change from './EventHandlerClass/Change';
 
 // nested mapping
 
@@ -67,6 +68,8 @@ function App() {
   return (
     
    <div>
+
+      <Change/>
 
       <State/>
 
