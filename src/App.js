@@ -8,12 +8,25 @@ import Data from './Data.json';
 
 
 function App() {
+
+  let item=[];
+
+  for(let i=0;i<Data.length;i++)
+  {
+
+    item.push(<Card titleText={Data[i].titleText} descText={Data[i].descText}/>)
+
+  }
+
+
+
+
   return (
     
    <div>
 
-      <Card titleText={Data[0].titleText} descText={Data[0].descText}/>
-      <Card titleText={Data[1].titleText} descText={Data[1].descText}/>
+      
+      { item }
     
 
    </div>
