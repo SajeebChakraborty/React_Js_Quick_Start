@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/Card';
+import {  FaFacebookF, FaYoutube } from "react-icons/fa";
 
 //import data.json file
 import Data from './Data.json';
@@ -85,7 +86,10 @@ function App() {
       </div>)}
 
 
-      <Card2 title="card-name"/>
+      <Card2 title="card-name" />
+
+      < FaFacebookF />
+      < FaYoutube />
 
    </div>
 
