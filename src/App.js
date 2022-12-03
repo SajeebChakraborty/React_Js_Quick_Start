@@ -13,6 +13,8 @@ import Card2 from './components/Card2';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import State from './components/State';
+
 // nested mapping
 
 const users=[
@@ -64,6 +66,8 @@ function App() {
   return (
     
    <div>
+
+      <State/>
 
       
       {  Data.map((item,index)=> <Card key={uuidv4()} titleText={item.titleText} descText={item.descText}/>) }
