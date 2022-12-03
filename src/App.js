@@ -3,18 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card';
 
+//import data.json file
+import Data from './Data.json';
+
 
 function App() {
   return (
     
    <div>
 
-      <Card titleText="ticket1" descText="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
-      "/>
-
-      <Card titleText="ticket2" descText="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
-"/>
-
+      <Card titleText={Data[0].titleText} descText={Data[0].descText}/>
+      <Card titleText={Data[1].titleText} descText={Data[1].descText}/>
+    
 
    </div>
 
