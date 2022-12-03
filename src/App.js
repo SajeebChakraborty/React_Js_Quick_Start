@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import State from './components/State';
 import FirstPage from './conditonalRendering/FirstPage';
 import Change from './EventHandlerClass/Change';
+import HookUseState from './HookUseState';
 
 // nested mapping
 
@@ -68,6 +69,8 @@ function App() {
   return (
     
    <div>
+
+      <HookUseState/>
 
       <Change/>
 
