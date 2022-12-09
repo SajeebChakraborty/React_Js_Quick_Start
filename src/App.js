@@ -17,6 +17,7 @@ import State from './components/State';
 import FirstPage from './conditonalRendering/FirstPage';
 import Change from './EventHandlerClass/Change';
 import HookUseState from './HookUseState';
+import Form from './components/Form/Form';
 
 // nested mapping
 
@@ -69,6 +70,8 @@ function App() {
   return (
     
    <div>
+
+      <Form/>
 
       <HookUseState/>
 
