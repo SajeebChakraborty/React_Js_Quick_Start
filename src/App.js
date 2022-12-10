@@ -19,6 +19,7 @@ import Change from './EventHandlerClass/Change';
 import HookUseState from './HookUseState';
 import Form from './components/Form/Form';
 import UseStateWithObject from './components/UseStateWithObject/UseStateWithObject';
+import Child from './components/Child';
 
 // nested mapping
 
@@ -66,11 +67,21 @@ const users=[
 function App() {
 
 
-   //mapping data to component
+   //passing data from child to parent
+
+   const dataPassingMethod=(childData)=>{
+
+      console.log(childData);
+
+
+   }
+
 
   return (
     
    <div>
+
+      <Child onChildData={dataPassingMethod}/>
 
       <UseStateWithObject/>
 
