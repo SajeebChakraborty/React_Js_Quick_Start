@@ -20,6 +20,8 @@ import HookUseState from './HookUseState';
 import Form from './components/Form/Form';
 import UseStateWithObject from './components/UseStateWithObject/UseStateWithObject';
 import Child from './components/Child';
+import FormikState from './components/FormikState/FormikState.js';
+
 
 // nested mapping
 
@@ -80,6 +82,9 @@ function App() {
   return (
     
    <div>
+
+    
+      <FormikState/>
 
       <Child onChildData={dataPassingMethod}/>
 
