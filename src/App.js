@@ -21,6 +21,7 @@ import Form from './components/Form/Form';
 import UseStateWithObject from './components/UseStateWithObject/UseStateWithObject';
 import Child from './components/Child';
 import FormikState from './components/FormikState/FormikState.js';
+import Toggle from './components/Toggle';
 
 
 // nested mapping
@@ -83,6 +84,8 @@ function App() {
     
    <div>
 
+
+      <Toggle/>
     
       <FormikState/>
 
