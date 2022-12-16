@@ -26,6 +26,15 @@ export default function FetchData() {
   return (
     <div>
       
+      <h1>Fetch data from 'Fake API'</h1>
+      {todos && todos.map((todo)=>{
+      
+        return <p key={todo.id}>{todo.title}</p>
+      
+      }
+      
+      )}
+
 
 
 
