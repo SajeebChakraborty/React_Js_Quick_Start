@@ -14,7 +14,7 @@ export default function UseEffect() {
 
     console.log("useeffect");
 
-  })
+  },[])
 
 
   return (
