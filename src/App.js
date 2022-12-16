@@ -23,6 +23,7 @@ import Child from './components/Child';
 import FormikState from './components/FormikState/FormikState.js';
 import Toggle from './components/Toggle';
 import UseEffect from './components/UseEffect/UseEffect';
+import FetchData from './components/FetchData/FetchData';
 
 
 // nested mapping
@@ -84,6 +85,8 @@ function App() {
   return (
     
    <div>
+
+      <FetchData/>
 
       <UseEffect/>
 
