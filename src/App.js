@@ -22,6 +22,7 @@ import UseStateWithObject from './components/UseStateWithObject/UseStateWithObje
 import Child from './components/Child';
 import FormikState from './components/FormikState/FormikState.js';
 import Toggle from './components/Toggle';
+import UseEffect from './components/UseEffect/UseEffect';
 
 
 // nested mapping
@@ -84,6 +85,7 @@ function App() {
     
    <div>
 
+      <UseEffect/>
 
       <Toggle/>
     
