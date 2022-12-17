@@ -3,22 +3,29 @@ import React, { useEffect, useState } from 'react'
 export default function FetchData() {
 
   const [todos,setTodos]=useState(null);
+  const [isloading,setLoading]=useState(true);
 
   useEffect(()=>{
 
-    fetch('https://jsonplaceholder.typicode.com/todos')
-    .then((res)=>{
+    setTimeout(()=>{
 
-        return res.json();
+      fetch('https://jsonplaceholder.typicode.com/todos')
+      .then((res)=>{
 
-    })
-    .then((data)=>{
+          return res.json();
 
-        setTodos(data);
+      })
+      .then((data)=>{
+
+          setTodos(data);
+          setLoading(false);
 
 
-    });
+      });
 
+
+
+    },2000)
 
 
   })
@@ -27,6 +34,9 @@ export default function FetchData() {
     <div>
       
       <h1>Fetch data from 'Fake API'</h1>
+
+      {isloading && <p>it is loading</p>}
+
       {todos && todos.map((todo)=>{
       
         return <p key={todo.id}>{todo.title}</p>
