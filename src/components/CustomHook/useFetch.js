@@ -46,7 +46,7 @@ export default function useFetch(url) {
       },2000)
   
   
-    })
+    },[url])
     return {data,isloading,error};
 
 }
