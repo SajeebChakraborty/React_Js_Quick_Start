@@ -23,7 +23,7 @@ import Child from './components/Child';
 import FormikState from './components/FormikState/FormikState.js';
 import Toggle from './components/Toggle';
 import UseEffect from './components/UseEffect/UseEffect';
-import FetchData from './components/FetchData/FetchData';
+import FetchData from './components/CustomHook/FetchData';
 
 
 // nested mapping
