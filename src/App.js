@@ -25,6 +25,7 @@ import Toggle from './components/Toggle';
 import UseEffect from './components/UseEffect/UseEffect';
 import FetchData from './components/CustomHook/FetchData';
 import DynamicStyling from './components/DynamicStyling/DynamicStyling';
+import FragmentDesign from './components/Fragment/FragmentDesign';
 
 
 // nested mapping
@@ -86,6 +87,8 @@ function App() {
   return (
     
    <div>
+
+      <FragmentDesign/>
 
       <DynamicStyling/>
 
