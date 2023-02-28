@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
+import style from './Style.css'
+
 const DynamicStyling = () => {
 
   const [name,setName] = useState("");
@@ -32,7 +34,7 @@ const DynamicStyling = () => {
   return (
     <div>
       
-      <input type="text" value = {name} style={{ backgroundColor: validInput ? "green" : "red" }} onChange={handleChange} />
+      <input type="text" value = {name} className={  validInput ? "valid" : "invalid" } onChange={handleChange} />
 
     </div>
   )
