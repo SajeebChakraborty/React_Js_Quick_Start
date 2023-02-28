@@ -24,6 +24,7 @@ import FormikState from './components/FormikState/FormikState.js';
 import Toggle from './components/Toggle';
 import UseEffect from './components/UseEffect/UseEffect';
 import FetchData from './components/CustomHook/FetchData';
+import DynamicStyling from './components/DynamicStyling/DynamicStyling';
 
 
 // nested mapping
@@ -85,6 +86,8 @@ function App() {
   return (
     
    <div>
+
+      <DynamicStyling/>
 
       <FetchData/>
 
