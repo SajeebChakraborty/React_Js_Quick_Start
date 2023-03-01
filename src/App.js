@@ -28,6 +28,7 @@ import DynamicStyling from './components/DynamicStyling/DynamicStyling';
 import FragmentDesign from './components/Fragment/FragmentDesign';
 import Users from './components/PropTypes/Users';
 import LifeCycle from './components/LifeCycle/LifeCycle';
+import UserForm from './components/RefExample/UserForm';
 
 
 // nested mapping
@@ -89,6 +90,8 @@ function App() {
   return (
     
    <div>
+
+      <UserForm/>
 
       <LifeCycle/>
 
