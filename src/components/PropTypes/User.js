@@ -5,8 +5,8 @@ const User = (props) => {
   return (
     <div>
       
-       <h1>{props.userName}</h1> 
-       <h3>{props.userId}</h3> 
+       <h1>{props.user.id}</h1> 
+       <h3>{props.user.name}</h3> 
 
     </div>
   )
@@ -14,16 +14,21 @@ const User = (props) => {
 
 User.propTypes = {
 
-    userName:PropTypes.string,
-    userId:PropTypes.number,
+    user:PropTypes.shape({
+
+        id:PropTypes.number,
+        name:PropTypes.string,
+
+    }),
+
 
 }
 
-User.defaultProps={
+// User.defaultProps={
 
-    userName:"default name",
-    userId:0,
+//     userName:"default name",
+//     userId:0,
 
-}
+// }
 
 export default User

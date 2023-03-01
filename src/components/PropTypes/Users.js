@@ -4,13 +4,18 @@ import User from './User'
 
 const Users = () => {
 
-  const [userName,setUserName]=useState("Sajeeb");
-  const [userId,setUserId]=useState("101")
+  const [user,setUser]=useState({
+
+    id:1921484889,
+    name: "Sajeeb Cb"
+
+  });
+
 
   return (
     <>
       
-       <User userName={userName} userId={userId}/> 
+       <User user={user} /> 
 
     </>
   )
