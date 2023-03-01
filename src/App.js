@@ -93,6 +93,8 @@ function App() {
 
       <UserForm/>
 
+      <UserForm/>
+
       <LifeCycle/>
 
       <Users/>
