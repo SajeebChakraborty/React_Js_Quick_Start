@@ -29,6 +29,7 @@ import FragmentDesign from './components/Fragment/FragmentDesign';
 import Users from './components/PropTypes/Users';
 import LifeCycle from './components/LifeCycle/LifeCycle';
 import UserForm from './components/RefExample/UserForm';
+import UseReducer from './components/UseReducer';
 
 
 // nested mapping
@@ -90,6 +91,8 @@ function App() {
   return (
     
    <div>
+
+      <UseReducer/>
 
       <UserForm/>
 
